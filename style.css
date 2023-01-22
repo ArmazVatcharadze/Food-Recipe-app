@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sebtn{
+    background: orangered;
+    width: 40px;
+    border-radius: 0px 50px 50px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.search-div{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+}
+
+.search{
+    height: 38px;
+    width: 200px;
+    border: orangered 1px solid;
+    border-radius: 12px 0 0 12px;
+    padding-left: 5px;
+}
+
+.enter{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.meals{
+    display: flex;
+    margin-top: 30px;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.meal img{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    padding: 10px;
+}
+
+.meal{
+    display: flex;
+    flex-direction: column;
+    background: burlywood;
+    align-items: center;
+    margin-bottom: 20px;
+    max-width: 320px;
+    text-align: center;
+}
+
+.meal h2{
+    color: white;
+}
+
+.meal button{
+    margin-bottom: 20px;
+    width: 150px;
+    background: orangered;
+    height: 30px;
+    color: white;
+    border: none;
+    border-radius: 40px;
+    cursor: pointer;
+}
+
+.show{
+    display: flex;
+}
+
+.modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: orangered;
+    width: 90%;
+    /* align-self: center; */
+    margin: 0 auto;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    max-height: 500px;
+    overflow: auto;
+}
+
+.modal a{
+    color: white;
+}
+
+.innerImg{
+    border-radius: 50%;
+    width: 100px;
+    margin-bottom: 20px;
+}
+
+.modal-wrapp{
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+}
+
+.closemodal{
+    width: 20px;
+    float: right;
+    align-self: self-end;
+    cursor: pointer;
+}
+
+
+@media (min-width: 768px){
+    .search{
+        width: 300px;
+    }
+
+    .meals{
+        flex-direction: row;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+}
